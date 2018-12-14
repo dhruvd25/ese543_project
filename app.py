@@ -6,7 +6,7 @@ import dash_table_experiments as dt
 import zipfile
 
 # Load in data set
-zip = zipfile.ZipFile(r'output.xlsx.zip')  
+zip = zipfile.ZipFile(r'output.xlsx.zip?raw=true')  
 zip.extractall()  
 
 sheet_to_df_map = pd.ExcelFile('output.xlsx')
