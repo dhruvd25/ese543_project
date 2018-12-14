@@ -7,7 +7,7 @@ import zipfile
 
 # Load in data set
 zip = zipfile.ZipFile(r'output.xlsx.zip?raw=true')  
-zip.extractall()  
+zip.extractall('output.xlsx')  
 
 sheet_to_df_map = pd.ExcelFile('output.xlsx')
 dropdown_options = pd.read_excel('output.xlsx', sheet_name=None)
