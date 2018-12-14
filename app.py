@@ -6,8 +6,8 @@ import dash_table_experiments as dt
 import zipfile
 
 # Load in data set
-zip = zipfile.ZipFile(r'output.xlsx.zip?raw=true')  
-zip.extractall('output.xlsx')  
+zip = zipfile.ZipFile(r'output.xlsx.zip')  
+zip.extractall()  
 
 sheet_to_df_map = pd.ExcelFile('output.xlsx')
 dropdown_options = pd.read_excel('output.xlsx', sheet_name=None)
